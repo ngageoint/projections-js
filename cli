@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+const {Projections} = require('./dist/index');
+
+const args = process.argv.slice(2);
+const fromName = args[0];
+const toName = args[1];
+const x = Number(args[2]);
+const y = Number(args[3]);
+
+const transformation = Projections.getProjectionTransformation(fromName, toName);
+const results = transformation.transform(x, y);
+console.log('x: ' + results[0]);
+console.log('y: ' + results[1]);
