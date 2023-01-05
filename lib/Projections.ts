@@ -53,7 +53,7 @@ export class Projections {
 			Projections.cachedProjections[authority] = {};
 		}
 		const name = authority + ':' + code;
-		proj4.defs(code.toString(), proj4String);
+		proj4.defs(name, proj4String);
 		const definition = proj4.defs(name);
 		Projections.cachedProjections[authority][code.toString()] = new Projection(authority, code.toString(), definition);
 	}
