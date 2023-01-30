@@ -1,6 +1,6 @@
 {
   "name": "@ngageoint/projections-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Projections JavaScript Library",
   "keywords": [
     "NGA",
@@ -76,7 +76,7 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "browser": "dist/sf-proj.min.js",
+  "browser": "dist/projections.min.js",
   "files": [
     "dist",
     "cli"
